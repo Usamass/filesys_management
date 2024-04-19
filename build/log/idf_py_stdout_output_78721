@@ -1,0 +1,73 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/osama-shafiq/component_exp/build/bootloader/esp-idf/esptool_py && /home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/osama-shafiq/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/osama-shafiq/component_exp/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/component_exp.c.obj
+/home/osama-shafiq/component_exp/main/component_exp.c: In function 'remote_option':
+/home/osama-shafiq/component_exp/main/component_exp.c:146:39: warning: variable 'upper_tem_range' set but not used [-Wunused-but-set-variable]
+  146 |                 int lower_tem_range , upper_tem_range;
+      |                                       ^~~~~~~~~~~~~~~
+/home/osama-shafiq/component_exp/main/component_exp.c: In function 'app_main':
+/home/osama-shafiq/component_exp/main/component_exp.c:183:27: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  183 |         char* file_buff = read_file(FILES[2]);          // need to free file_buff after use.
+      |                           ^~~~~~~~~
+/home/osama-shafiq/component_exp/main/component_exp.c:184:28: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  184 |         char* model_name = get_model(file_buff , 8984);         // need to free model_name after use.
+      |                            ^~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable component_exp.elf
+[8/10] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/osama-shafiq/component_exp/build/component_exp.bin
+[9/10] cd /home/osama-shafiq/component_exp/build/esp-idf/esptool_py && /home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/osama-shafiq/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/osama-shafiq/component_exp/build/partition_table/partition-table.bin /home/osama-shafiq/component_exp/build/component_exp.bin
+component_exp.bin binary size 0x39b70 bytes. Smallest app partition is 0x100000 bytes. 0xc6490 bytes (77%) free.
+[9/10] cd /home/osama-shafiq/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/osama-shafiq/esp-idf -D "SERIAL_TOOL=/home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python;;/home/osama-shafiq/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/osama-shafiq/component_exp/build -P /home/osama-shafiq/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 component_exp.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py vv4.8.dev1
+Serial port /dev/ttyACM0
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:dc:c3:99:4a:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00049fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26704 bytes to 16369...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16369 compressed) at 0x00001000 in 0.5 seconds (effective 407.8 kbit/s)...
+Hash of data verified.
+Compressed 236400 bytes to 127185...
+Writing at 0x00010000... (12 %)
+Writing at 0x0001cafc... (25 %)
+Writing at 0x000226b7... (37 %)
+Writing at 0x0002813e... (50 %)
+Writing at 0x0002df6e... (62 %)
+Writing at 0x000332bd... (75 %)
+Writing at 0x0003ee43... (87 %)
+Writing at 0x00044aef... (100 %)
+Wrote 236400 bytes (127185 compressed) at 0x00010000 in 3.0 seconds (effective 629.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 144...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (144 compressed) at 0x00008000 in 0.0 seconds (effective 1573.9 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.0 seconds (effective 2535.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

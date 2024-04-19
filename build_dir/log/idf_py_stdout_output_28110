@@ -1,0 +1,47 @@
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig '/home/osama-shafiq/component_exp/sdkconfig'
+-- Found Git: /usr/bin/git (found version "2.40.1") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/osama-shafiq/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/osama-shafiq/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/osama-shafiq/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/osama-shafiq/component_exp/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python (found version "3.11.6") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "component_exp" version: 1
+-- Adding linker script /home/osama-shafiq/component_exp/build_dir/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/osama-shafiq/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_uart esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs file_system freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/osama-shafiq/esp-idf/components/app_trace /home/osama-shafiq/esp-idf/components/app_update /home/osama-shafiq/esp-idf/components/bootloader /home/osama-shafiq/esp-idf/components/bootloader_support /home/osama-shafiq/esp-idf/components/bt /home/osama-shafiq/esp-idf/components/cmock /home/osama-shafiq/esp-idf/components/console /home/osama-shafiq/esp-idf/components/cxx /home/osama-shafiq/esp-idf/components/driver /home/osama-shafiq/esp-idf/components/efuse /home/osama-shafiq/esp-idf/components/esp-tls /home/osama-shafiq/esp-idf/components/esp_adc /home/osama-shafiq/esp-idf/components/esp_app_format /home/osama-shafiq/esp-idf/components/esp_bootloader_format /home/osama-shafiq/esp-idf/components/esp_coex /home/osama-shafiq/esp-idf/components/esp_common /home/osama-shafiq/esp-idf/components/esp_driver_ana_cmpr /home/osama-shafiq/esp-idf/components/esp_driver_dac /home/osama-shafiq/esp-idf/components/esp_driver_gpio /home/osama-shafiq/esp-idf/components/esp_driver_gptimer /home/osama-shafiq/esp-idf/components/esp_driver_i2c /home/osama-shafiq/esp-idf/components/esp_driver_i2s /home/osama-shafiq/esp-idf/components/esp_driver_ledc /home/osama-shafiq/esp-idf/components/esp_driver_mcpwm /home/osama-shafiq/esp-idf/components/esp_driver_parlio /home/osama-shafiq/esp-idf/components/esp_driver_pcnt /home/osama-shafiq/esp-idf/components/esp_driver_rmt /home/osama-shafiq/esp-idf/components/esp_driver_sdio /home/osama-shafiq/esp-idf/components/esp_driver_sdm /home/osama-shafiq/esp-idf/components/esp_driver_sdmmc /home/osama-shafiq/esp-idf/components/esp_driver_sdspi /home/osama-shafiq/esp-idf/components/esp_driver_spi /home/osama-shafiq/esp-idf/components/esp_driver_tsens /home/osama-shafiq/esp-idf/components/esp_driver_uart /home/osama-shafiq/esp-idf/components/esp_eth /home/osama-shafiq/esp-idf/components/esp_event /home/osama-shafiq/esp-idf/components/esp_gdbstub /home/osama-shafiq/esp-idf/components/esp_hid /home/osama-shafiq/esp-idf/components/esp_http_client /home/osama-shafiq/esp-idf/components/esp_http_server /home/osama-shafiq/esp-idf/components/esp_https_ota /home/osama-shafiq/esp-idf/components/esp_https_server /home/osama-shafiq/esp-idf/components/esp_hw_support /home/osama-shafiq/esp-idf/components/esp_lcd /home/osama-shafiq/esp-idf/components/esp_local_ctrl /home/osama-shafiq/esp-idf/components/esp_mm /home/osama-shafiq/esp-idf/components/esp_netif /home/osama-shafiq/esp-idf/components/esp_netif_stack /home/osama-shafiq/esp-idf/components/esp_partition /home/osama-shafiq/esp-idf/components/esp_phy /home/osama-shafiq/esp-idf/components/esp_pm /home/osama-shafiq/esp-idf/components/esp_psram /home/osama-shafiq/esp-idf/components/esp_ringbuf /home/osama-shafiq/esp-idf/components/esp_rom /home/osama-shafiq/esp-idf/components/esp_system /home/osama-shafiq/esp-idf/components/esp_timer /home/osama-shafiq/esp-idf/components/esp_wifi /home/osama-shafiq/esp-idf/components/espcoredump /home/osama-shafiq/esp-idf/components/esptool_py /home/osama-shafiq/esp-idf/components/fatfs /home/osama-shafiq/component_exp/components/file_system /home/osama-shafiq/esp-idf/components/freertos /home/osama-shafiq/esp-idf/components/hal /home/osama-shafiq/esp-idf/components/heap /home/osama-shafiq/esp-idf/components/http_parser /home/osama-shafiq/esp-idf/components/idf_test /home/osama-shafiq/esp-idf/components/ieee802154 /home/osama-shafiq/esp-idf/components/json /home/osama-shafiq/esp-idf/components/log /home/osama-shafiq/esp-idf/components/lwip /home/osama-shafiq/component_exp/main /home/osama-shafiq/esp-idf/components/mbedtls /home/osama-shafiq/esp-idf/components/mqtt /home/osama-shafiq/esp-idf/components/newlib /home/osama-shafiq/esp-idf/components/nvs_flash /home/osama-shafiq/esp-idf/components/nvs_sec_provider /home/osama-shafiq/esp-idf/components/openthread /home/osama-shafiq/esp-idf/components/partition_table /home/osama-shafiq/esp-idf/components/perfmon /home/osama-shafiq/esp-idf/components/protobuf-c /home/osama-shafiq/esp-idf/components/protocomm /home/osama-shafiq/esp-idf/components/pthread /home/osama-shafiq/esp-idf/components/sdmmc /home/osama-shafiq/esp-idf/components/soc /home/osama-shafiq/esp-idf/components/spi_flash /home/osama-shafiq/esp-idf/components/spiffs /home/osama-shafiq/esp-idf/components/tcp_transport /home/osama-shafiq/esp-idf/components/ulp /home/osama-shafiq/esp-idf/components/unity /home/osama-shafiq/esp-idf/components/usb /home/osama-shafiq/esp-idf/components/vfs /home/osama-shafiq/esp-idf/components/wear_levelling /home/osama-shafiq/esp-idf/components/wifi_provisioning /home/osama-shafiq/esp-idf/components/wpa_supplicant /home/osama-shafiq/esp-idf/components/xtensa
+-- Configuring done (21.6s)
+-- Generating done (2.9s)
+-- Build files have been written to: /home/osama-shafiq/component_exp/build_dir

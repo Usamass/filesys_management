@@ -1,0 +1,61 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Mar 11 2024 16:46:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (76) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (91) boot:  3 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (99) boot:  4 ota_0            OTA app          00 10 00190000 00180000[0m
+[0;32mI (106) boot:  5 spiffs           Unknown data     01 82 00310000 0007d000[0m
+[0;32mI (114) boot: End of partition table[0m
+[0;32mI (118) boot: Defaulting to factory image[0m
+[0;32mI (123) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=098b0h ( 39088) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=000198d8 vaddr=3ffb0000 size=02200h (  8704) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0001bae0 vaddr=40080000 size=04538h ( 17720) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16b0ch ( 92940) map[0m
+[0;32mI (191) esp_image: segment 4: paddr=00036b34 vaddr=40084538 size=08238h ( 33336) load[0m
+[0;32mI (211) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (211) boot: Disabling RNG early entropy source...[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     component_exp[0m
+[0;32mI (239) cpu_start: App version:      1[0m
+[0;32mI (244) cpu_start: Compile time:     Mar 15 2024 10:18:33[0m
+[0;32mI (250) cpu_start: ELF file SHA256:  c8828f668...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (271) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (276) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (283) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFB2AC0 len 0002D540 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (308) heap_init: At 4008C770 len 00013890 (78 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (319) spi_flash: flash io: dio[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) MAIN: >> kenwood.jsonNOT found
+Cannot go further!!!
+[0m

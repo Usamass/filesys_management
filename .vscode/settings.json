@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "spiffs_management.h": "c",
+        "file_system.h": "c"
+    }
+}

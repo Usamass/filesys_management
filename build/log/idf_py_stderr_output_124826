@@ -1,0 +1,239 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081872: panic_abort at /home/osama-shafiq/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40085fdd: esp_system_abort at /home/osama-shafiq/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008ba09: __assert_func at /home/osama-shafiq/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008af0c: block_locate_free at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:566 (discriminator 1)
+ (inlined by) tlsf_malloc at /home/osama-shafiq/esp-idf/components/heap/tlsf/tlsf.c:1005 (discriminator 1)
+[0m
+[0;33m0x4008a8d1: multi_heap_malloc_impl at /home/osama-shafiq/esp-idf/components/heap/multi_heap.c:211
+[0m
+[0;33m0x40081edd: heap_caps_malloc_base at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:179
+[0m
+[0;33m0x40081f38: heap_caps_malloc at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:202
+[0m
+[0;33m0x40081f6d: heap_caps_malloc_default at /home/osama-shafiq/esp-idf/components/heap/heap_caps.c:228
+[0m
+[0;33m0x4008ba19: malloc at /home/osama-shafiq/esp-idf/components/newlib/heap.c:25
+[0m
+[0;33m0x400d6597: cJSON_New_Item at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:243
+[0m
+[0;33m0x400d679b: parse_object at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1637
+[0m
+[0;33m0x400d697a: parse_value at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1360
+[0m
+[0;33m0x400d6af0: cJSON_ParseWithLengthOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1120 (discriminator 2)
+[0m
+[0;33m0x400d6b6d: cJSON_ParseWithOpts at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1091
+[0m
+[0;33m0x400d6b7d: cJSON_Parse at /home/osama-shafiq/esp-idf/components/json/cJSON/cJSON.c:1177
+[0m
+[0;33m0x400d6147: app_main at /home/osama-shafiq/component_exp/main/component_exp.c:63
+[0m
+[0;33m0x400ec398: main_task at /home/osama-shafiq/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40086841: vPortTaskWrapper at /home/osama-shafiq/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

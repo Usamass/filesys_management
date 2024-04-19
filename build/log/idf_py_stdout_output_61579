@@ -1,0 +1,40 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/osama-shafiq/component_exp/build/bootloader/esp-idf/esptool_py && /home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/osama-shafiq/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/osama-shafiq/component_exp/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/12] No install step for 'bootloader'
+[3/12] Completed 'bootloader'
+[4/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/component_exp.c.obj
+/home/osama-shafiq/component_exp/main/component_exp.c: In function 'app_main':
+/home/osama-shafiq/component_exp/main/component_exp.c:8:29: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+    8 |         char* file_buffer = read_file(FILES[0]);
+      |                             ^~~~~~~~~
+/home/osama-shafiq/component_exp/main/component_exp.c:8:15: warning: unused variable 'file_buffer' [-Wunused-variable]
+    8 |         char* file_buffer = read_file(FILES[0]);
+      |               ^~~~~~~~~~~
+[5/12] Building C object esp-idf/spiffs_management/CMakeFiles/__idf_spiffs_management.dir/spiffs_management.c.obj
+/home/osama-shafiq/component_exp/components/spiffs_management/spiffs_management.c: In function 'remote_option':
+/home/osama-shafiq/component_exp/components/spiffs_management/spiffs_management.c:122:39: warning: variable 'upper_tem_range' set but not used [-Wunused-but-set-variable]
+  122 |                 int lower_tem_range , upper_tem_range;
+      |                                       ^~~~~~~~~~~~~~~
+[6/12] Linking C static library esp-idf/spiffs_management/libspiffs_management.a
+[7/12] Linking C static library esp-idf/main/libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable component_exp.elf
+[10/12] Generating binary image from built executable
+esptool.py vv4.8.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/osama-shafiq/component_exp/build/component_exp.bin
+[11/12] cd /home/osama-shafiq/component_exp/build/esp-idf/esptool_py && /home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/osama-shafiq/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/osama-shafiq/component_exp/build/partition_table/partition-table.bin /home/osama-shafiq/component_exp/build/component_exp.bin
+component_exp.bin binary size 0x2ed80 bytes. Smallest app partition is 0x100000 bytes. 0xd1280 bytes (82%) free.
+[11/12] cd /home/osama-shafiq/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/osama-shafiq/esp-idf -D "SERIAL_TOOL=/home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python;;/home/osama-shafiq/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/osama-shafiq/component_exp/build -P /home/osama-shafiq/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 component_exp.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py vv4.8.dev1
+Serial port /dev/ttyACM0
+Connecting....
+
+A fatal error occurred: Serial data stream stopped: Possible serial noise or corruption.
+FAILED: CMakeFiles/flash /home/osama-shafiq/component_exp/build/CMakeFiles/flash 
+cd /home/osama-shafiq/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/osama-shafiq/esp-idf -D "SERIAL_TOOL=/home/osama-shafiq/.espressif/python_env/idf5.3_py3.11_env/bin/python;;/home/osama-shafiq/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/osama-shafiq/component_exp/build -P /home/osama-shafiq/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.
